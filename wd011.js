@@ -12,6 +12,7 @@ const INC_SIZE = 10
 function setup()
 {
     createCanvas(CANVAS_SIZE, CANVAS_SIZE)
+    background('#fffaf0') // Because pure white is too boring
 }
 
 function draw()
