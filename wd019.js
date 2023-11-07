@@ -13,19 +13,17 @@ const CANVAS_SIZE = SECTION_WIDTH * 6
 function setup()
 {
     createCanvas(CANVAS_SIZE, CANVAS_SIZE)
-    background(224, 235, 136)
+    background('beige')
 }
 
 function draw()
 {
     // First section
-    stroke(115, 54, 152)
     for (var v = 0; v <= SECTION_WIDTH; v += SPACE)
     {
         line(v, 0, v, CANVAS_SIZE)
     }
 
-    stroke(9, 136, 148)
     for (var st = 0; st <= SECTION_WIDTH; st += SPACE)
     {
         line(st, 0, SECTION_WIDTH, SECTION_WIDTH - st)
@@ -40,13 +38,11 @@ function draw()
     }
 
     // Second section
-    stroke(115, 54, 152)
     for (var v = SECTION_WIDTH; v <= SECTION_WIDTH * 2; v += SPACE)
     {
         line(v, 0, v, CANVAS_SIZE)
     }
 
-    stroke(97, 111, 86)
     for (var st = 0; st <= SECTION_WIDTH; st += SPACE)
     {
         line(SECTION_WIDTH, st, SECTION_WIDTH + st, 0)
@@ -61,13 +57,11 @@ function draw()
     }
 
     // Third section
-    stroke(106, 20, 19)
     for (var h = 0; h <= CANVAS_SIZE; h += SPACE)
     {
         line(SECTION_WIDTH * 2, h, SECTION_WIDTH * 3, h)
     }
 
-    stroke(9, 136, 148)
     for (var st = SECTION_WIDTH * 2; st <= SECTION_WIDTH * 3; st += SPACE)
     {
         line(st, 0, SECTION_WIDTH * 3, SECTION_WIDTH * 3 - st)
@@ -86,13 +80,11 @@ function draw()
     )
 
     // Fourth section
-    stroke(106, 20, 19)
     for (var h = 0; h <= CANVAS_SIZE; h += SPACE)
     {
         line(SECTION_WIDTH * 3, h, SECTION_WIDTH * 4, h)
     }
 
-    stroke(97, 111, 86)
     for (var st = SECTION_WIDTH * 3; st <= SECTION_WIDTH * 4; st += SPACE)
     {
         line(SECTION_WIDTH * 3, st - SECTION_WIDTH * 3, st, 0)
@@ -107,20 +99,17 @@ function draw()
     }
 
     // Fifth section
-    stroke(115, 54, 152)
     for (var v = SECTION_WIDTH * 4; v <= SECTION_WIDTH * 5; v += SPACE)
     {
         line(v, 0, v, CANVAS_SIZE)
     }
 
-    stroke(106, 20, 19)
     for (var h = 0; h <= CANVAS_SIZE; h += SPACE)
     {
         line(SECTION_WIDTH * 4, h, SECTION_WIDTH * 5, h)
     }
 
     // Sixth section
-    stroke(9, 136, 148)
     for (var s1t = SECTION_WIDTH * 5; s1t <= CANVAS_SIZE; s1t += SPACE)
     {
         line(s1t, 0, CANVAS_SIZE, CANVAS_SIZE - s1t)
@@ -136,7 +125,6 @@ function draw()
         CANVAS_SIZE
     )
 
-    stroke(97, 111, 86)
     for (var s2t = 0; s2t <= SECTION_WIDTH; s2t += SPACE)
     {
         line(SECTION_WIDTH * 5, s2t, SECTION_WIDTH * 5 + s2t, 0)

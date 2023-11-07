@@ -12,13 +12,11 @@ const INC_SIZE = 10
 function setup()
 {
     createCanvas(CANVAS_SIZE, CANVAS_SIZE)
-    background('#fffaf0') // Because pure white is too boring
+    background('beige') // Because pure white is too boring
 }
 
 function draw()
 {
-    stroke(204, 204, 204)
-
     for (var v = 0; v <= CANVAS_SIZE; v += INC_SIZE)
     {
         line(v, 0, v, CANVAS_SIZE)
@@ -28,7 +26,6 @@ function draw()
         line(0, h, CANVAS_SIZE, h)
     }
 
-    stroke('red')
     for (var q1 = 0; q1 <= CANVAS_SIZE / 2; q1 += INC_SIZE)
     {
         line(0, q1, q1, 0)
@@ -38,7 +35,6 @@ function draw()
         line(CANVAS_SIZE / 2, q1, q1, CANVAS_SIZE / 2)
     }
 
-    stroke('blue')
     for (var q2 = CANVAS_SIZE / 2; q2 <= CANVAS_SIZE; q2 += INC_SIZE)
     {
         line(q2, 0, CANVAS_SIZE, CANVAS_SIZE - q2)
@@ -48,7 +44,6 @@ function draw()
         line(CANVAS_SIZE / 2, q2, CANVAS_SIZE - q2, CANVAS_SIZE / 2)
     }
 
-    stroke('darkgoldenrod')
     for (var q3 = 0; q3 <= CANVAS_SIZE / 2; q3 += INC_SIZE)
     {
         line(q3, CANVAS_SIZE / 2, CANVAS_SIZE / 2, CANVAS_SIZE - q3)
@@ -58,7 +53,6 @@ function draw()
         line(0, q3, CANVAS_SIZE - q3, CANVAS_SIZE)
     }
 
-    stroke('green')
     for (var q4 = CANVAS_SIZE / 2; q4 <= CANVAS_SIZE; q4 += INC_SIZE)
     {
         line(CANVAS_SIZE / 2, q4, q4, CANVAS_SIZE / 2)
